@@ -5,17 +5,17 @@ import math
 import seaborn as sns
 import folium
 
-# BFdata = pd.read_csv(r"accidents.csv")
-# sns.catplot(x="Victims", hue="Part of the day", col="Month", data=BFdata, kind="count")
-# plt.show()
-#
-# avocado = pd.read_csv(r"accidents.csv")
-# sns.relplot(x="Victims", y="Part of the day", col="Month", hue="Serious injuries", data=avocado)
-# plt.show()
+BFdata = pd.read_csv(r"accidents.csv")
+sns.catplot(x="Victims", hue="Part of the day", col="Month", data=BFdata, kind="count")
+plt.show()
 
-# BFdata = pd.read_csv(r"accidents.csv")
-# sns.catplot(x="Vehicles involved", hue="Day", col="Part of the day", data=BFdata, kind="count")
-# plt.show()
+avocado = pd.read_csv(r"accidents.csv")
+sns.relplot(x="Victims", y="Part of the day", col="Month", hue="Serious injuries", data=avocado)
+plt.show()
+
+BFdata = pd.read_csv(r"accidents.csv")
+sns.catplot(x="Vehicles involved", hue="Day", col="Part of the day", data=BFdata, kind="count")
+plt.show()
 
 BFdata = pd.read_csv(r"accidents.csv")
 sns.catplot(y="Day", hue="Hour", col="Part of the day", data=BFdata, kind="count")
